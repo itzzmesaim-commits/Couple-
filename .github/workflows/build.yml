@@ -16,6 +16,7 @@ jobs:
       - name: Unzip project and add Firebase keys
         run: |
           unzip -q Couples-project.zip
+          chmod -R u+w couples
           cat > couples/www/js/firebase-config.js <<'EOF'
           const FIREBASE_CONFIG = {
             apiKey: "AIzaSyBMx0DuAF3hJWK0TLFK99--klC2NFuEGnQ",

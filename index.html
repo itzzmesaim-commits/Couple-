@@ -3,28 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<meta name="theme-color" content="#14091f">
-<title>Couples</title>
+<meta name="theme-color" content="#0e081e">
+<title>Playmates</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="app">
-  <header id="top"><span class="logo">💞 Couples</span><span id="pts"></span></header>
+  <header id="top">
+    <div class="brand"><img src="img/logo.png" class="lg" alt=""><div><span class="logo">Playmates</span><small>Own &amp; managed by Sameer Khan</small></div></div>
+    <span id="pts"></span>
+  </header>
   <main id="screen"></main>
-  <nav id="nav">
-    <button data-s="home">🎮<small>Games</small></button>
-    <button data-s="live">💬<small>Live</small></button>
-    <button data-s="dm">✉️<small>Private</small></button>
-    <button data-s="rank">🏆<small>Ranks</small></button>
-    <button data-s="me">👤<small>Profile</small></button>
-  </nav>
+  <nav id="nav"></nav>
 </div>
 <div id="modal" class="hidden"></div>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script src="js/firebase-config.js"></script>
+<script src="js/engine.js"></script>
 <script src="js/games.js"></script>
-<script src="js/app.js"></script>
+<script src="js/bots.js"></script>
+<script src="js/games2.js"></script>
+<script src="js/games3.js"></script>
+<script src="js/core.js"></script>
+<script src="js/rooms.js"></script>
+<script src="js/screens.js"></script>
 </body>
 </html>

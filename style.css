@@ -65,3 +65,37 @@ input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px soli
 .opt-btn.pick{border-color:var(--rose)}
 .opt-btn.right{border-color:var(--ok)}
 .imgcard{width:100%;border-radius:16px;background:#000;max-height:60vh;object-fit:contain}
+/* v2 */
+:root{--bg:#0e081e}
+#top{background:linear-gradient(90deg,#2b0f45,#1d1250)}
+.brand{display:flex;gap:10px;align-items:center}
+.brand small{display:block;font-size:10px;color:var(--mut);margin-top:1px}
+.lg{width:40px;height:40px;border-radius:11px}
+.auth{display:flex;flex-direction:column;gap:6px;padding-top:6px}
+.biglogo{width:150px;height:150px;border-radius:30px;margin:6px auto}
+.c{text-align:center}
+.btn.sm{padding:6px 10px;font-size:12px}
+.btn.ic{margin:0;padding:11px 12px;display:inline-block}
+.code{color:var(--rose);font-size:22px;letter-spacing:3px}
+.msg time{display:block;text-align:right;font-size:9px;color:var(--mut);margin-top:2px}
+.chatbox summary{padding:6px 0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:10px}
+.stat{background:var(--card);border-radius:14px;padding:12px;text-align:center}
+.stat b{display:block;font-size:26px;color:var(--rose)}
+.urow{background:var(--card);border-radius:12px;padding:8px 10px;margin:6px 0;font-size:13px}
+.urow .mut{font-size:11px}
+/* ---- Playmates additions ---- */
+.authbox{max-width:380px;margin:0 auto;text-align:center;padding-top:6px}
+.logo-lg{width:140px;height:140px;border-radius:30px;margin:4px auto 8px;display:block;box-shadow:0 8px 30px #9b5cff55}
+.tabs{display:flex;gap:6px;margin:10px 0}.tabs .btn{flex:1}
+.center{text-align:center}
+.owner{text-align:center;font-size:12px;color:var(--mut);padding:14px 0 6px}.owner b{color:var(--rose)}
+.botTag{font-size:11px;background:#3ddc9733;color:var(--ok);padding:2px 8px;border-radius:10px;vertical-align:middle}
+.code{font-size:22px;letter-spacing:3px;color:var(--rose);font-weight:800}
+.msg .tm{font-size:10px;color:var(--mut);text-align:right;margin-top:2px}
+.meter{position:relative;height:34px;background:var(--card2);border-radius:17px;margin:14px 0;overflow:hidden}
+.meter .zone{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);background:#3ddc9755;border-left:2px solid var(--ok);border-right:2px solid var(--ok)}
+.meter .mk{position:absolute;top:3px;bottom:3px;width:8px;border-radius:4px;background:var(--rose);transform:translateX(-50%)}
+.adminrow{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:var(--card);border-radius:10px;margin:4px 0;font-size:13px}
+.cv{width:100%;max-width:420px;display:block;margin:8px auto;border-radius:12px;background:#12071f}
+.hud{text-align:center;font-weight:700}

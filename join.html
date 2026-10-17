@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Playmates invite</title>
+<style>body{margin:0;background:#0e081e;color:#f6eefc;font-family:system-ui,sans-serif;text-align:center;padding:28px 18px}
+.code{font-size:44px;letter-spacing:8px;font-weight:800;color:#ff4d8d;margin:10px 0}
+a,button{display:block;margin:12px auto;max-width:320px;padding:14px;border-radius:14px;border:0;font-size:16px;font-weight:700;color:#fff;text-decoration:none;background:linear-gradient(90deg,#ff4d8d,#9b5cff)}
+a.sec,button.sec{background:#2d1a44}</style></head><body>
+<h1>💞 Playmates</h1><p>You are invited to play in a room!</p>
+<div class="code" id="c">-----</div>
+<a id="open" href="#">📲 Open in app</a>
+<button class="sec" id="cp">📋 Copy code</button>
+<a class="sec" href="https://github.com/itzzmesaim-commits/Couple-/releases">⬇️ Download the app</a>
+<p style="opacity:.7;font-size:13px">If the app does not open, launch Playmates, tap Join and enter this code.</p>
+<script>
+var c=(new URLSearchParams(location.search).get('room')||'').toUpperCase().slice(0,5);
+document.getElementById('c').textContent=c||'-----';
+document.getElementById('open').href='intent://join/'+c+'#Intent;scheme=playmates;package=com.playmates.app;end';
+var I='intent://join/'+c+'#Intent;scheme=playmates;package=com.playmates.app;S.browser_fallback_url='+encodeURIComponent(location.href)+';end';
+if(c&&/Android/i.test(navigator.userAgent)){setTimeout(function(){location.href='intent://join/'+c+'#Intent;scheme=playmates;package=com.playmates.app;end'},150)}
+document.getElementById('cp').onclick=function(){navigator.clipboard&&navigator.clipboard.writeText(c);this.textContent='✅ Copied'};
+</script></body></html>
